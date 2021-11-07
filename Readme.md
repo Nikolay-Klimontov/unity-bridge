@@ -1,4 +1,4 @@
-### [EventBus](./Messaging/Paper.Core.Messaging.md)
+### [EventBus](./Messaging/Game.Core.Messaging.md)
 Базовый элемент для связи систем/сервисов между собой. 
 Для доступа к системе транспорта сообщений есть синглтон [MessageSystem](./Messaging/MessageSystem.cs), будет расширен в дальнейшем
 
@@ -15,9 +15,9 @@
 При публикации события каждый подписчик получит данное событие. Данные в событии неизменяемые.
 
 ### FSM
-#### [Stateful](./Stateful/Paper.Core.Stateful.md)
-Набор классов для создания подсистем/сервисов, логика работы которых меняется в зависимости от их текущего состояния (например [GameLoop](../GameLoop/GameStateMachine.cs)). 
+#### [Stateful](./Stateful/Game.Core.Stateful.md)
+Набор классов для создания подсистем/сервисов, логика работы которых меняется в зависимости от их текущего состояния
 Transition-first реализация.
 
-Работает на тех же [событиях]() что и [MessageSystem](../Messaging/Paper.Core.Messaging.md).
+Работает на тех же [событиях]() что и [MessageSystem](../Messaging/Game.Core.Messaging.md).
 
